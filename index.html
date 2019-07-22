@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-CN" dir="ltr">
+<head>
+    <title>rating</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="Content-Language" content="zh-CN" />
+    <meta name="Robots" content="index,follow" />
+    <meta name="Security" content="public" />
+
+    <script type="text/javascript" src="js/mootools-1.2-core-nc.js"></script>
+    <script type="text/javascript" src="js/rating.js?v=2"></script> 
+
+    <style type="text/css">
+    .abc {background: url(default.png) no-repeat; width=17px; height=17px;}
+    </style>
+
+    <script type="text/javascript">
+    // <![CDATA[
+    window.addEvent('domready', function(){
+            var r = $('rating');
+
+            new Rating().inject(r, {
+                url: 'abc',
+                value: 3,
+                image: 'default.png', 
+                showMessage : true
+            });
+    });
+    // ]]>
+    </script>
+</head>
+<body>
+    <div id="wrap">
+        <div id="rating"></div>
+    </div>
+</body>
+</html>
